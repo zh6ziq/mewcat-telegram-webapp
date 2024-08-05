@@ -9,6 +9,7 @@ body{
     margin: 0;
     text-align: center;
     overflow-x: hidden;
+    font-size: 30px;
 }
 
 a{
@@ -72,28 +73,34 @@ img{
 }
 
 #about {
-    background-color: bisque;
+    background-color: rgb(135, 237, 27);
+    color: white;
     padding: 10px;
     margin: 5px;
     width: 80px;
     height: 50px;
     border-radius: 5px;
+    font-size: 15px;
 }
 
 #user {
-    background-color: rgb(161, 81, 235);
+    background-color: rgb(175, 109, 237);
+    color: white;
     padding: 10px;
     margin: 5px;
     width: 80px;
     height: 50px;
     border-radius: 5px;
+    font-size: 15px;
 }
 
 #setting {
     background-color: rgb(251, 105, 105);
+    color: white;
     padding: 10px;
     margin: 5px;
     width: 80px;
     height: 50px;
     border-radius: 5px;
+    font-size: 15px;
 }
