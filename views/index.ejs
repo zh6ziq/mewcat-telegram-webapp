@@ -11,5 +11,36 @@
     <div>
         <%- include('partials/script'); %>
     </div>
+
+    <div style="display: flex;justify-content: center; padding: 10px;">
+      <input 
+      type="button" 
+      value="About"
+      id="about"
+      onclick="onClickBtn('about')"
+      >
+
+      <input 
+      type="button" 
+      value="User"
+      id="user"
+      onclick="onClickBtn('user')"
+      >
+
+      <input 
+      type="button" 
+      value="Setting"
+      id="setting"
+      onclick="onClickBtn('setting')"
+      >
+    </div>
+
+    <div>
+      <script>
+        function onClickBtn(id) {
+          console.log(document.getElementById(id).id, '----btn-id')
+        }
+      </script>
+    </div>
   </body>
 </html>

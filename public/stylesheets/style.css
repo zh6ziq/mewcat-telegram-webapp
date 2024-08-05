@@ -70,3 +70,30 @@ img{
     color: white;
     font-weight: 600;
 }
+
+#about {
+    background-color: bisque;
+    padding: 10px;
+    margin: 5px;
+    width: 80px;
+    height: 50px;
+    border-radius: 5px;
+}
+
+#user {
+    background-color: rgb(161, 81, 235);
+    padding: 10px;
+    margin: 5px;
+    width: 80px;
+    height: 50px;
+    border-radius: 5px;
+}
+
+#setting {
+    background-color: rgb(251, 105, 105);
+    padding: 10px;
+    margin: 5px;
+    width: 80px;
+    height: 50px;
+    border-radius: 5px;
+}
