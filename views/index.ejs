@@ -5,14 +5,10 @@
     <link rel='stylesheet' href='/stylesheets/style.css' />
   </head>
   <body>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
+    <!-- <h1><%= title %></h1> -->
+    <!-- <p>Welcome to <%= title %></p> -->
 
-    <div>
-        <%- include('partials/script'); %>
-    </div>
-
-    <div style="display: flex;justify-content: center; padding: 10px;">
+    <!-- <div style="display: flex;justify-content: center; padding: 10px;">
       <input 
       type="button" 
       value="About"
@@ -33,14 +29,34 @@
       id="setting"
       onclick="onClickBtn('setting')"
       >
+    </div> -->
+
+    <!-- <div class="navbar-nav">
+      <a class="nav-link n-item" href="/about">About</a>
+      <a class="nav-link n-item" href="/user">User</a>
+      <a class="nav-link n-item" href="/contact">Settings</a>
+    </div> -->
+
+    <div>
+      <%- include('partials/nav'); %>
     </div>
 
     <div>
-      <script>
+      <%- include('partials/script'); %>
+
+      <!-- <script>
         function onClickBtn(id) {
           console.log(document.getElementById(id).id, '----btn-id');
+
+          const pageTitle = document.getElementById(id).value;
+
+          $.get( "user", {title: pageTitle }, function( data ) {
+            console.log(data)
+            $( ".result" ).html( data );
+            console.log('ok')
+          });
         }
-      </script>
+      </script> -->
     </div>
   </body>
 </html>
